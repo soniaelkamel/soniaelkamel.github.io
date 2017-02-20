@@ -331,10 +331,9 @@ sonia {
        (min-resolution: 120dpi) {
 
 }
-@media (max-width: 490px) {
+@media (max-width: 761px) {
     .resize {
-        float: right;
-        margin: 5px;    
+        margin: 2px;    
     }
  
     
