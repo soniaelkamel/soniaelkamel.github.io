@@ -203,7 +203,6 @@ ul {
 .white-box {
     width: 40%;
     height: 100%;
-    background-color: bisque;
     float: left;
 }
 
@@ -293,7 +292,7 @@ sonia {
 }
 
 .hero-image {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/564x/68/38/92/68389215705f332ae371bb17c43b57ce.jpg");
+    background-image: url("helsinki.jpg");
     background-size: cover;
     width: 80%;
     height: 400px;
@@ -341,6 +340,14 @@ sonia {
     
     .maxfont {
         font-size: 20px;
+    }
+    
+    .partner-info {
+        font-size: 9px;
+    }
+    
+    .selitysteksti {
+        font-size: 10px;
     }
     
     .first {
