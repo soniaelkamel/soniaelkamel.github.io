@@ -63,7 +63,6 @@ textarea {
     background-color: #003E5A;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 200px;
 }
 
 #news {
@@ -76,7 +75,8 @@ textarea {
 }
 
 .buttons {
-
+    width: 80%;
+    margin: 0 auto; 
 }
 
 .teksti {
