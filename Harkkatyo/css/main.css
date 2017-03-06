@@ -66,6 +66,22 @@ textarea {
     margin-bottom: 200px;
 }
 
+#news {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.buttons {
+    margin-left: 10%;
+    margin-top: 50px;
+    
+    
+}
+
 .teksti {
     text-align: center;
     padding-top: 200px;
@@ -111,10 +127,6 @@ h3 {
     float: left;
 }
 
-#news {
-    width: 80%;
-    margin: 0 auto;
-}
 
 .symbol:hover {
     color: #408741;
