@@ -291,12 +291,8 @@ sonia {
     margin-bottom: 150px;
 }
 
-.hero-image {
-    background-image: url("helsinki.jpg");
-    background-size: cover;
+.videocontainer {
     width: 80%;
-    height: 400px;
-    background-position: center;
     margin-left: 10%;
     margin-right: 10%;
 }
