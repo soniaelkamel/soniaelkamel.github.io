@@ -291,10 +291,10 @@ sonia {
     margin-bottom: 150px;
 }
 
-.videocontainer {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+.thevideo{
+    height: auto;
+    display: flex;
+    margin: 0 auto;
 }
 
 .partner-info {
