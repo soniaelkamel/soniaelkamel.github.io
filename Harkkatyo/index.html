@@ -21,7 +21,14 @@
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src ="enemy.js"></script>
+    <script src="player.js"></script>
+    <script src ="animation.js"></script>
+    
     <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -59,7 +66,6 @@
 
                 </div>
             </div>
-
             <section class="mint-box">
                 <div id="news"></div>
             </section>
@@ -69,6 +75,9 @@
                 <i id="play" class="fa fa-play" aria-hidden="true"></i>
                 <i id="forward" class="fa fa-forward" aria-hidden="true"></i>
                 </div>
+            <canvas id='canvas'></canvas>
+            <button id="speedUp"> Speed Up </button>
+            <button id= "speedDown"> Speed Down </button>
             <div class="container">
                 <div class="white-box" id="partners">
                     <p class="partners maxfont"> Kumppanit. </p>
@@ -91,12 +100,12 @@
             <footer class="footerclass">
                 <div class="first">
                     <p class="contact"> Yhteyshenkilö </p>
-                    <p class="sonia"> Sonia El Kamel </p>
+                    <p class="sonia"> Kalle Kokoomus </p>
                     <p class="email"> yv@kn.fi </p>
                 </div>
                 <div class="second">
                     <p class="kokoomusnuoret"> Kokoomusnuoret</p>
-                    <p class="adress"> Sepänkatu 3-5 C 00150 Helsinki</p>
+                    <p class="adress"> Kokoomuskatu, Helsinki</p>
 
                 </div>
                 <div class="third">
