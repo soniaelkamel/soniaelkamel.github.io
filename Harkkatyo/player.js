@@ -1,8 +1,8 @@
 var player = {
        x: 200,
        y: 200,
-       w: 40,
-       h: 40,
+       w: 32,
+       h: 64,
        speed: 10,
        direction: 0
     };
@@ -11,8 +11,8 @@ var player = {
         switch (direction) {
             case "left":
                 player.x -= player.speed;
-                if (player.x < 20) {
-                    player.x = 20;
+                if (player.x < 15) {
+                    player.x = 15;
                 }
                 break;
             case "right":
@@ -23,28 +23,24 @@ var player = {
                 break;
             case "up":
                 player.y -= player.speed;
-                if (player.y < 18) {
-                    player.y = 18;
+                if (player.y < 34) {
+                    player.y = 34;
                 }
                 break;
             case "down":
                 player.y += player.speed;
-                if (player.y > 360) {
-                    player.y = 360;
+                if (player.y > 385) {
+                    player.y = 385;
                 }
                 break;
         }
     }
 
-    function touchEnemy(enemies) {
-        for(i =0; i< enemies.length; i++) {
-            if(enemies[i].x <= player.x && player.x <= (enemies[i].x + 50) && enemies[i].y <= player.y && player.y <= (enemies[i].y + 50)) {
-                player.x = 200
-                player.y = 200
-                enemies[i].direction = "left";
-            }
-        }
-    }
+ 
+
+
+
+
     
 
     

@@ -21,6 +21,7 @@ $(document).ready( function() {
     playerImage.src = "player.png"
     
     
+    
     var monsteri = sprite({
             context: ctx,
             width: 50,
@@ -46,13 +47,13 @@ $(document).ready( function() {
         var x = player.x - (player.w / 2);
         var y = player.y - (player.h / 2);
         if(player.direction == 1) {
-            ctx.drawImage(playerImage, 31, 0, 31, 64, x, y, 31, 64)
+            ctx.drawImage(playerImage, 29, 0, 29, 47, x, y, 29, 47)
         }
         else if(player.direction == 2) {
-            ctx.drawImage(playerImage, 62, 0, 31, 64, x, y, 31, 64)
+            ctx.drawImage(playerImage, 58, 0, 29, 47, x, y, 29, 47)
         }
         else {
-            ctx.drawImage(playerImage, 0, 0, 31, 64, x, y, 31, 64)
+            ctx.drawImage(playerImage, 0, 0, 29, 47, x, y, 29, 47)
         }
     };
     
@@ -62,6 +63,27 @@ $(document).ready( function() {
         context.drawImage(enemyImage, x, y);
     }
     
+    var resetInMiddle = function (enemi) {
+        player.x = canvas.width / 2;
+        player.y = canvas.height / 2;
+    
+        // Throw the monster somewhere on the screen randomly
+    enemi.x = 32 + (Math.random() * (canvas.width - 64)); 
+    enemi.y = 32 + (Math.random() * (canvas.height - 64));
+    
+    };
+    
+    function touchEnemy(enemies) {
+        for(i =0; i< enemies.length; i++) {
+            if((player.x <= (enemies[i].x + 29))   
+           && (enemies[i].x <= (player.x + 29))
+           && (player.y <= (enemies[i].y + 47))
+           && (enemies[i].y <= (player.y + 47))) {
+                resetInMiddle(enemies[i]);
+            }  
+            }
+        }
+              
     addEventListener('mousedown', function(e) {
         var x = e.offsetX 
         var y = e.offsetY

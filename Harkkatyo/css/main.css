@@ -59,8 +59,9 @@ textarea {
 #canvas {
     margin-top: 100;
     margin-bottom: 100;
-    align-content: center;
+    margin-left: 100;
 }
+
 
 .mint-box {
     padding-top: 100px;

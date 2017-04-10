@@ -2,8 +2,8 @@ function createMonster(){
     var monster = {
         x: Number(Math.floor(Math.random()* 350 + 20)),
 	    y: Number(Math.floor(Math.random() * 350 + 20)),
-        w: 5,
-        h: 5,
+        w: 50,
+        h: 50,
         speed: 2,
         direction: 'up'
     }	
@@ -53,8 +53,8 @@ function sprite(options) {
                that.image,
                0,
                0,
-               30,
-               30);
+               50,
+               50);
     };
     console.log(that.image)
     return that;
